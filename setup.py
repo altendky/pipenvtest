@@ -1,7 +1,8 @@
 import setuptools
 
+
 setuptools.setup(
-    name='pipenvtest',
+    name='gridtied',
     packages=setuptools.find_packages('python'),
     package_dir={'': 'python'},
     install_requires=[
@@ -16,7 +17,7 @@ setuptools.setup(
     ],
     entry_points={
         'pytest11': [
-            'pipenvtest_cli = pipenvtest.cli:f',
+            'gridtied_cli = gridtied.tests.hil.pytest_plugin',
         ]
     },
 )

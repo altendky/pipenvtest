@@ -3,22 +3,16 @@ url = "https://pypi.python.org/simple"
 verify_ssl = true
 name = "pypi"
 
+[[source]]
+url = "http://fstab.net/pypi/simple"
+verify_ssl = false
+name = "fstab.net"
+
 [packages]
-pytest = "*"
-pytest-qt = "*"
-pytest-twisted = {git = "https://github.com/pytest-dev/pytest-twisted", editable = true}
-Twisted = "*"
-"PyQt5" = "*"
-python-can = "*"
 stlib = {git = "https://github.com/altendky/stlib", editable = true}
 canmatrix = {git = "https://github.com/ebroecker/canmatrix", editable = true, ref = "development"}
-pyelftools = "*"
-bitstruct = "*"
-natsort = "*"
-"qt5reactor" = "*"
 javabridge = {git = "https://github.com/LeeKamentsky/python-javabridge", editable = true}
 ccstudiodss = {git = "https://github.com/altendky/ccstudiodss", editable = true}
-pypiwin32 = {markers = "sys_platform == 'win32'"}
 "e1839a8" = {path = ".", editable = true}
 
 [dev-packages]
